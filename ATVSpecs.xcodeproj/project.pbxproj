@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83A5293A2CDAAF82002B8AE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83A529392CDAAF82002B8AE3 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8315103E2CDA78A500B48E43 /* ATVSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATVSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A529392CDAAF82002B8AE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		831510352CDA78A500B48E43 = {
 			isa = PBXGroup;
 			children = (
+				83A529392CDAAF82002B8AE3 /* README.md */,
 				831510402CDA78A500B48E43 /* ATVSpecs */,
 				8315103F2CDA78A500B48E43 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A5293A2CDAAF82002B8AE3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
