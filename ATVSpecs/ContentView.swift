@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  ATVSpecs
 //
-//  Created by Chris on 11/5/24.
-//
 
 import SwiftUI
 
