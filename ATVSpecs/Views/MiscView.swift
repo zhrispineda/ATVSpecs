@@ -17,11 +17,6 @@ struct MiscView: View {
     
     var body: some View {
         List {
-            Section("CPU") {
-                Text("Processor count: **\(coreCount)**")
-                    .onAppear(perform: refreshData)
-            }
-            
             Section("Host") {
                 VStack(alignment: .leading) {
                     HStack(spacing: 0) {
@@ -39,6 +34,11 @@ struct MiscView: View {
             
             Section("Memory") {
                 Text("Total memory estimate: **\(totalMemory) GB**")
+            }
+            
+            Section("Processor") {
+                Text("Core count: **\(coreCount)**")
+                    .onAppear(perform: refreshData)
             }
             
             Section("Uptime") {

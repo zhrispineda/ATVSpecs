@@ -21,6 +21,11 @@
 			path = ATVSpecs;
 			sourceTree = "<group>";
 		};
+		83A5293B2CDAB95C002B8AE3 /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 		831510352CDA78A500B48E43 = {
 			isa = PBXGroup;
 			children = (
+				83A5293B2CDAB95C002B8AE3 /* Assets */,
 				83A529392CDAAF82002B8AE3 /* README.md */,
 				831510402CDA78A500B48E43 /* ATVSpecs */,
 				8315103F2CDA78A500B48E43 /* Products */,
@@ -68,6 +74,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				831510402CDA78A500B48E43 /* ATVSpecs */,
+				83A5293B2CDAB95C002B8AE3 /* Assets */,
 			);
 			name = ATVSpecs;
 			packageProductDependencies = (
@@ -259,8 +266,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ATVSpecs/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,8 +293,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ATVSpecs/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
