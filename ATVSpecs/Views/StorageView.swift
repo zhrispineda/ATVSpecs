@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct StorageView: View {
-    // Variables
     let helper = Helper()
     @State private var freeSpace = "Loading..."
     @State private var totalSpace = "Loading..."
@@ -16,10 +15,10 @@ struct StorageView: View {
     var body: some View {
         VStack(spacing: 50) {
             ZStack {
-                Circle() // Background ring
+                // Background ring
+                Circle()
                     .stroke(style: StrokeStyle(lineWidth: 16.0))
-                    .opacity(0.9)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.blue)
                 VStack {
                     Text("\(String(format: "%.2f", usedSpace)) of \(totalSpace) used")
                     Text("\(freeSpace) free")
@@ -28,8 +27,9 @@ struct StorageView: View {
                 .font(.headline)
                 .fontWeight(.semibold)
                 .fontWidth(.condensed)
-                .onAppear(perform: refreshData)
-                Circle() // Ring
+                
+                // Ring
+                Circle()
                     .trim(from: (usedSpace) / convertedTotalSpace, to: 1.0)
                     .stroke(style: StrokeStyle(lineWidth: 16.0))
                     .rotationEffect(.degrees(270))
@@ -39,9 +39,10 @@ struct StorageView: View {
             
             Button("Refresh", action: refreshData)
         }
+        .onAppear(perform: refreshData)
     }
     
-    // Functions
+    // MARK: Functions
     func refreshData() {
         freeSpace = helper.getAvailableStorage()
         totalSpace = helper.getTotalStorage()
