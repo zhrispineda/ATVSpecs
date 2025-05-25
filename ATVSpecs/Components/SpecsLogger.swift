@@ -1,5 +1,5 @@
 //
-//  SettingsLogger.swift
+//  SpecsLogger.swift
 //  ATVSpecs
 //
 
@@ -7,7 +7,7 @@ import SwiftUI
 import os
 
 /// Logging system based on the Logger object that automatically prints in previews and logs in-app.
-struct SettingsLogger {
+struct SpecsLogger {
     static let logger = Logger(subsystem: "com.example.Settings", category: "Core")
     
     /// A Boolean value that indicates whether the instance is running in Preview.
